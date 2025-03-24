@@ -1,0 +1,35 @@
+1. Soft Reset (git reset --soft <commit_hash>)
+Effect:
+
+Moves the HEAD to the specified commit.
+
+Keeps the changes in the staging area (index).
+
+Working directory remains unchanged.
+
+Use Case:
+If you want to reset to a previous commit but keep changes staged, so you can recommit them.
+
+2. Mixed Reset (git reset --mixed <commit_hash>) (Default)
+Effect:
+
+Moves the HEAD to the specified commit.
+
+Clears the staging area (unstages changes).
+
+Working directory remains unchanged.
+
+Use Case:
+If you want to reset to a previous commit and untrack changes, but not lose them.
+
+3. Hard Reset (git reset --hard <commit_hash>)
+Effect:
+
+Moves the HEAD to the specified commit.
+
+Clears the staging area (unstages changes).
+
+Deletes all uncommitted changes from the working directory.
+
+Use Case:
+If you want to completely discard all changes and go back to a clean state.
